@@ -59,7 +59,7 @@
     }
 
 .arkaplan {
-    background-image: url('..Raf.jpg');
+    background-image: url('Raf.jpg');
     background-size: cover;
     height: 100vh;
 }
@@ -70,7 +70,7 @@
 }
 
 .arkaplan2 {
-    background-image: url('..ArkaKitap.png');
+    background-image: url('ArkaKitap.png');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -78,7 +78,7 @@
 .KapalıKitap {
     position: relative;
     text-align: center;
-    background-image: url(KapalıKitap.png);
+    background-image: url('KapalıKitap.png');
     background-size: cover;
     font-size: 20px;
     width: 350px;
