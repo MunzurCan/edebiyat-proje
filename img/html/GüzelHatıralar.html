@@ -1,0 +1,266 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Munzur CAN - Edebiyat Dönemleri</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="MUNZUR CAN - Edebiyat Dönemleri">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/bootsrapCSS/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/Genel.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <script src="/js/JavaScript.js"></script>
+    <script src="/js/JavaScript2.js"></script>
+    <script src="/js/JavaScript3.js"></script>
+
+    <script>
+        function autoPlay() {
+            if (audioPlayer.paused) {
+                audioPlayer.play();
+                playPauseButton.innerHTML = '<i class="bi bi-pause"></i>';
+            }
+        }
+    </script>
+
+</head>
+<body class="arkaplan" onload="autoPlay()">
+    <nav class="navbar navbar-expand">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand text-white" href="index.html">Ana sayfa</a>
+            </div>
+            <div class="navbar-collapse">
+                <ul class="navbar-nav ms-auto">
+                    <!-- 1. -->
+                    <li class="nav-item"><a class="nav-link text-white" href="#kitaplar">Kitaplar</a></li>
+                </ul>
+            </div>
+
+            <div class="nav-item">
+                <a id="ac" onclick="acMuzikPanel()" class="btn btn-close-white">
+                    <i id="icon" class="bi bi-back"></i>
+                </a>
+            </div>
+
+            <div id="MuzikPanel">
+                <div class="text-start">
+                    <audio id="audioPlayer">
+                        <source id="musicSource" src="" type="audio/mpeg">
+                        Tarayıcınız audio elementini desteklemiyor.
+                    </audio>
+
+                    <div style="width:300px;height:30px">
+                        <p class="w-100" id="playing"></p>
+                    </div>
+                    <p>Atatürkün sevdiği şarkılar</p>
+                </div>
+
+                <div id="playerControls">
+                    <span></span>
+                    <button id="skipButtonStart"><i class="bi bi-skip-start"></i></button>
+
+                    <button id="playPauseButton" onclick="play()"><i class="bi bi-play"></i></button>
+
+                    <button id="skipButtonEnd"><i class="bi bi-skip-end"></i></button>
+                </div>
+
+            </div>
+
+        </div>
+    </nav>
+
+    <div id="kitaplar" class="container pt-5 pb-5 bg-1">
+
+        <div id="8yüzyıl" class="row">
+
+            <div id="slider" class="w-100 shadow">
+
+                <marquee width="500" height="730" class="text-center text-white" direction="up" scrolldelay="150">
+                    <h1>Gençliğe hitabe</h1>
+                    <br>
+                    Ey Türk gençliği! Birinci vazifen; Türk istiklalini, Türk cumhuriyetini, ilelebet muhafaza ve müdafaa etmektir.
+                    <br /><br />
+                    Mevcudiyetinin ve istikbalinin yegâne temeli budur. Bu temel, senin en kıymetli hazinendir.
+                    İstikbalde dahi seni bu hazineden mahrum etmek isteyecek dâhilî ve haricî bedhahların olacaktır.
+                    <br /><br />
+                    Bir gün, istiklal ve cumhuriyeti müdafaa mecburiyetine düşersen, vazifeye atılmak için içinde bulunacağın
+                    vaziyetin imkân ve şeraitini düşünmeyeceksin. Bu imkân ve şerait, çok namüsait bir mahiyette tezahür edebilir.
+                    <br /><br />
+                    İstiklal ve cumhuriyetine kastedecek düşmanlar, bütün dünyada emsali görülmemiş bir galibiyetin mümessili olabilirler.
+                    Cebren ve hile ile aziz vatanın bütün kaleleri zapt edilmiş, bütün tersanelerine girilmiş, bütün orduları dağıtılmış
+                    ve memleketin her köşesi bilfiil işgal edilmiş olabilir.
+                    <br /><br />
+                    Bütün bu şeraitten daha elim ve daha vahim olmak üzere,
+                    memleketin dâhilinde iktidara sahip olanlar, gaflet ve dalalet ve hatta hıyanet içinde bulunabilirler.
+                    <br /><br />
+                    Hatta bu iktidar sahipleri, şahsi menfaatlerini müstevlilerin siyasi emelleriyle tevhit edebilirler.
+                    Millet, fakruzaruret içinde harap ve bitap düşmüş olabilir.
+                    <br /><br />
+                    Ey Türk istikbalinin evladı! İşte, bu ahval ve şerait içinde dahi vazifen, Türk istiklal ve cumhuriyetini kurtarmaktır.
+                    Muhtaç olduğun kudret, damarlarındaki asil kanda mevcuttur.
+                    <br /><br />
+                    Mustafa Kemal Atatürk
+                </marquee>
+            </div>
+
+            <!-- 1. Kart -->
+            <div class="col-5 ms-0 me-5 mt-5">
+                <div class="Cerceve ms-5 mt-5">
+                    <a href="https://www.kulturportali.gov.tr/medya/video/videodetay/7455">
+                        Watch video!
+                        <script>var w = window, d = document, e; w._fpes || (w._fpes = [], w.addEventListener("load", function () { var s = d.createElement("script"); s.src = "//embed.flowplayer.org/6.0.3/embed.min.js", d.body.appendChild(s) })), e = [].slice.call(d.getElementsByTagName("script"), -1)[0].parentNode, w._fpes.push({ e: e, l: "", c: { "ratio": 0.5625, "rtmp": "rtmp://212.174.179.197:1935/WEBTV/", "live": false, "origin": "https://www.kulturportali.gov.tr/medya/video/videodetay/7455", "key": "$288206610485450", "swf": "/Flowplayer/flowplayer.swf", "swfHls": "/Flowplayer/flowplayerhls.swf", "adaptiveRatio": false, "logo": "https://webtvpanel.kulturportali.gov.tr/WebTV_Contents/logo.png", "clip": { "title": "Gazi Mustafa Kemal Atatürk'ün Kayseri Ziyareti ", "qualities": ["1080p", "720p", "480p", "360p", "240p", "120p"], "defaultQuality": "auto", "sources": [{ "type": "video/mp4", "src": "//webtvpanel.kulturportali.gov.tr/WebTV_Contents/Publish/10012019111601/10iigaziimikemaliataturkiunikayseriiziyaretiiveikayseriilisesi-1080p.mp4" }, { "type": "application/x-mpegurl", "src": "http://212.174.179.197:1935/WEBTV/_definst_/mp4:Publish/10012019111601/10iigaziimikemaliataturkiunikayseriiziyaretiiveikayseriilisesi-360p.mp4/playlist.m3u8" }] } } });</script>
+                    </a>
+                </div>
+            </div>
+
+            <!-- 2. Kart -->
+            <div class="col-5 ms-5 mt-5">
+                <div class="Cerceve ms-5 mt-5">
+                    <a href="https://www.kulturportali.gov.tr/medya/video/videodetay/9481">
+                        Watch video!
+                        <script>var w = window, d = document, e; w._fpes || (w._fpes = [], w.addEventListener("load", function () { var s = d.createElement("script"); s.src = "//embed.flowplayer.org/6.0.3/embed.min.js", d.body.appendChild(s) })), e = [].slice.call(d.getElementsByTagName("script"), -1)[0].parentNode, w._fpes.push({ e: e, l: "", c: { "ratio": 0.5625, "rtmp": "rtmp://212.174.179.197:1935/WEBTV/", "live": false, "origin": "https://www.kulturportali.gov.tr/medya/video/videodetay/9481", "key": "$288206610485450", "swf": "/Flowplayer/flowplayer.swf", "swfHls": "/Flowplayer/flowplayerhls.swf", "adaptiveRatio": false, "logo": "https://webtvpanel.kulturportali.gov.tr/WebTV_Contents/logo.png", "clip": { "title": "23 Nisan Ulusal Egemenlik ve Çocuk Bayramı", "qualities": ["360p", "240p", "120p"], "defaultQuality": "auto", "sources": [{ "type": "application/x-mpegurl", "src": "http://212.174.179.197:1935/WEBTV/_definst_/mp4:Publish/22042019101927/23inisan-360p.mp4/playlist.m3u8" }, { "type": "video/mp4", "src": "//webtvpanel.kulturportali.gov.tr/WebTV_Contents/Publish/22042019101927/23inisan-360p.mp4" }] } } });</script>
+                    </a>
+                </div>
+            </div>
+
+            <!-- 3. Kart -->
+            <div class="col-5 ms-0 me-5 mt-5">
+                <div class="Cerceve ms-5 mt-5">
+                    <a href="https://www.kulturportali.gov.tr/medya/video/videodetay/7461">
+                        Watch video!
+                        <script>var w = window, d = document, e; w._fpes || (w._fpes = [], w.addEventListener("load", function () { var s = d.createElement("script"); s.src = "//embed.flowplayer.org/6.0.3/embed.min.js", d.body.appendChild(s) })), e = [].slice.call(d.getElementsByTagName("script"), -1)[0].parentNode, w._fpes.push({ e: e, l: "", c: { "ratio": 0.5625, "rtmp": "rtmp://212.174.179.197:1935/WEBTV/", "live": false, "origin": "https://www.kulturportali.gov.tr/medya/video/videodetay/7461", "key": "$288206610485450", "swf": "/Flowplayer/flowplayer.swf", "swfHls": "/Flowplayer/flowplayerhls.swf", "adaptiveRatio": false, "logo": "https://webtvpanel.kulturportali.gov.tr/WebTV_Contents/logo.png", "clip": { "title": "Gazi Mustafa Kemal Atatürk'ün TBMM Açılış Konuşması 1934", "qualities": ["1080p", "720p", "480p", "360p", "240p", "120p"], "defaultQuality": "auto", "sources": [{ "type": "application/x-mpegurl", "src": "http://212.174.179.197:1935/WEBTV/_definst_/mp4:Publish/10012019151839/03iigaziimikemaliataturkiunitbmmiacisikonusmasiii1934-360p.mp4/playlist.m3u8" }, { "type": "video/mp4", "src": "//webtvpanel.kulturportali.gov.tr/WebTV_Contents/Publish/10012019151839/03iigaziimikemaliataturkiunitbmmiacisikonusmasiii1934-360p.mp4" }] } } });</script>
+                    </a>
+                </div>
+            </div>
+
+            <!-- 4. Kart -->
+            <div class="col-5 ms-5 mt-5">
+                <div class="Cerceve ms-5 mt-5">
+                    <a href="https://www.kulturportali.gov.tr/medya/video/videodetay/7459">
+                        Watch video!
+                        <script>var w = window, d = document, e; w._fpes || (w._fpes = [], w.addEventListener("load", function () { var s = d.createElement("script"); s.src = "//embed.flowplayer.org/6.0.3/embed.min.js", d.body.appendChild(s) })), e = [].slice.call(d.getElementsByTagName("script"), -1)[0].parentNode, w._fpes.push({ e: e, l: "", c: { "ratio": 0.5625, "rtmp": "rtmp://212.174.179.197:1935/WEBTV/", "live": false, "origin": "https://www.kulturportali.gov.tr/medya/video/videodetay/7459", "key": "$288206610485450", "swf": "/Flowplayer/flowplayer.swf", "swfHls": "/Flowplayer/flowplayerhls.swf", "adaptiveRatio": false, "logo": "https://webtvpanel.kulturportali.gov.tr/WebTV_Contents/logo.png", "clip": { "title": "Gazi Mustafa Kemal Atatürk'ün TBMM Açılış Konuşması 1936", "qualities": ["1080p", "720p", "480p", "360p", "240p", "120p"], "defaultQuality": "auto", "sources": [{ "type": "application/x-mpegurl", "src": "http://212.174.179.197:1935/WEBTV/_definst_/mp4:Publish/10012019143107/04iigaziimikemaliataturkiunitbmmiacisikonusmasiii1936-360p.mp4/playlist.m3u8" }, { "type": "video/mp4", "src": "//webtvpanel.kulturportali.gov.tr/WebTV_Contents/Publish/10012019143107/04iigaziimikemaliataturkiunitbmmiacisikonusmasiii1936-360p.mp4" }] } } });</script>
+                    </a>
+                </div>
+            </div>
+
+            <!-- 5. Kart -->
+            <div class="col-5 ms-0 me-5 mt-5">
+                <div class="Cerceve ms-5 mt-5">
+                    <a href="https://www.kulturportali.gov.tr/medya/video/videodetay/7458">
+                        Watch video!
+                        <script>var w = window, d = document, e; w._fpes || (w._fpes = [], w.addEventListener("load", function () { var s = d.createElement("script"); s.src = "//embed.flowplayer.org/6.0.3/embed.min.js", d.body.appendChild(s) })), e = [].slice.call(d.getElementsByTagName("script"), -1)[0].parentNode, w._fpes.push({ e: e, l: "", c: { "ratio": 0.5625, "rtmp": "rtmp://212.174.179.197:1935/WEBTV/", "live": false, "origin": "https://www.kulturportali.gov.tr/medya/video/videodetay/7458", "key": "$288206610485450", "swf": "/Flowplayer/flowplayer.swf", "swfHls": "/Flowplayer/flowplayerhls.swf", "adaptiveRatio": false, "logo": "https://webtvpanel.kulturportali.gov.tr/WebTV_Contents/logo.png", "clip": { "title": "Gazi Mustafa Kemal Atatürk'ün TBMM Binasına Gelişi ve Ayrılışı", "qualities": ["1080p", "720p", "480p", "360p", "240p", "120p"], "defaultQuality": "auto", "sources": [{ "type": "application/x-mpegurl", "src": "http://212.174.179.197:1935/WEBTV/_definst_/mp4:Publish/10012019142113/06iigaziimikemaliataturkiunitbmmibinasinaigelisiiveiayrilisi-360p.mp4/playlist.m3u8" }, { "type": "video/mp4", "src": "//webtvpanel.kulturportali.gov.tr/WebTV_Contents/Publish/10012019142113/06iigaziimikemaliataturkiunitbmmibinasinaigelisiiveiayrilisi-360p.mp4" }] } } });</script>
+                    </a>
+                </div>
+            </div>
+
+            <!-- 6. Kart -->
+            <div class="col-5 ms-5 mt-5">
+                <div class="Cerceve ms-5 mt-5">
+                    <a href="https://www.kulturportali.gov.tr/medya/video/videodetay/7460">
+                        Watch video!
+                        <script>var w = window, d = document, e; w._fpes || (w._fpes = [], w.addEventListener("load", function () { var s = d.createElement("script"); s.src = "//embed.flowplayer.org/6.0.3/embed.min.js", d.body.appendChild(s) })), e = [].slice.call(d.getElementsByTagName("script"), -1)[0].parentNode, w._fpes.push({ e: e, l: "", c: { "ratio": 0.5625, "rtmp": "rtmp://212.174.179.197:1935/WEBTV/", "live": false, "origin": "https://www.kulturportali.gov.tr/medya/video/videodetay/7460", "key": "$288206610485450", "swf": "/Flowplayer/flowplayer.swf", "swfHls": "/Flowplayer/flowplayerhls.swf", "adaptiveRatio": false, "logo": "https://webtvpanel.kulturportali.gov.tr/WebTV_Contents/logo.png", "clip": { "title": "Gazi Mustafa Kemal Atatürk'ün TBMM Açılış Konuşması 1937", "qualities": ["1080p", "720p", "480p", "360p", "240p", "120p"], "defaultQuality": "auto", "sources": [{ "type": "application/x-mpegurl", "src": "http://212.174.179.197:1935/WEBTV/_definst_/mp4:Publish/10012019145415/05iigaziimikemaliataturkiunitbmmiacisikonusmasiii1937-360p.mp4/playlist.m3u8" }, { "type": "video/mp4", "src": "//webtvpanel.kulturportali.gov.tr/WebTV_Contents/Publish/10012019145415/05iigaziimikemaliataturkiunitbmmiacisikonusmasiii1937-360p.mp4" }] } } });</script>
+                    </a>
+                </div>
+            </div>
+
+            <!-- 7. Kart -->
+            <div class="col-5 ms-0 me-5 mt-5">
+                <div class="Cerceve ms-5 mt-5">
+                    <a href="https://www.kulturportali.gov.tr/medya/video/videodetay/7456">
+                        Watch video!
+                        <script>var w = window, d = document, e; w._fpes || (w._fpes = [], w.addEventListener("load", function () { var s = d.createElement("script"); s.src = "//embed.flowplayer.org/6.0.3/embed.min.js", d.body.appendChild(s) })), e = [].slice.call(d.getElementsByTagName("script"), -1)[0].parentNode, w._fpes.push({ e: e, l: "", c: { "ratio": 0.5625, "rtmp": "rtmp://212.174.179.197:1935/WEBTV/", "live": false, "origin": "https://www.kulturportali.gov.tr/medya/video/videodetay/7456", "key": "$288206610485450", "swf": "/Flowplayer/flowplayer.swf", "swfHls": "/Flowplayer/flowplayerhls.swf", "adaptiveRatio": false, "logo": "https://webtvpanel.kulturportali.gov.tr/WebTV_Contents/logo.png", "clip": { "title": "Gazi Mustafa Kemal Atatürk ve Manevi Kızı Ülkü", "qualities": ["1080p", "720p", "480p", "360p", "240p", "120p"], "defaultQuality": "auto", "sources": [{ "type": "video/mp4", "src": "//webtvpanel.kulturportali.gov.tr/WebTV_Contents/Publish/10012019115703/11iigaziimiikemaliataturkiveimaneviikiziiulku-1080p.mp4" }, { "type": "application/x-mpegurl", "src": "http://212.174.179.197:1935/WEBTV/_definst_/mp4:Publish/10012019115703/11iigaziimiikemaliataturkiveimaneviikiziiulku-360p.mp4/playlist.m3u8" }] } } });</script>
+                    </a>
+                </div>
+            </div>
+
+            <!-- 8. Kart -->
+            <div class="col-5 ms-5 mt-5">
+                <div class="Cerceve ms-5 mt-5">
+                    <a href="https://www.kulturportali.gov.tr/medya/video/videodetay/7457">
+                        Watch video!
+                        <script>var w = window, d = document, e; w._fpes || (w._fpes = [], w.addEventListener("load", function () { var s = d.createElement("script"); s.src = "//embed.flowplayer.org/6.0.3/embed.min.js", d.body.appendChild(s) })), e = [].slice.call(d.getElementsByTagName("script"), -1)[0].parentNode, w._fpes.push({ e: e, l: "", c: { "ratio": 0.5625, "rtmp": "rtmp://212.174.179.197:1935/WEBTV/", "live": false, "origin": "https://www.kulturportali.gov.tr/medya/video/videodetay/7457", "key": "$288206610485450", "swf": "/Flowplayer/flowplayer.swf", "swfHls": "/Flowplayer/flowplayerhls.swf", "adaptiveRatio": false, "logo": "https://webtvpanel.kulturportali.gov.tr/WebTV_Contents/logo.png", "clip": { "title": "Gazi Mustafa Kemal Atatürk ve Türk Kadını", "qualities": ["1080p", "720p", "480p", "360p", "240p", "120p"], "defaultQuality": "auto", "sources": [{ "type": "video/mp4", "src": "//webtvpanel.kulturportali.gov.tr/WebTV_Contents/Publish/10012019133803/12iigaziimikemaliataturkiveiturkikadini-1080p.mp4" }, { "type": "application/x-mpegurl", "src": "http://212.174.179.197:1935/WEBTV/_definst_/mp4:Publish/10012019133803/12iigaziimikemaliataturkiveiturkikadini-360p.mp4/playlist.m3u8" }] } } });</script>
+                    </a>
+                </div>
+            </div>
+
+            <!-- 9. Kart -->
+            <div class="col-5 ms-0 me-5 mt-5">
+                <div class="Cerceve ms-5 mt-5">
+                    <a href="https://www.kulturportali.gov.tr/medya/video/videodetay/7462">
+                        Watch video!
+                        <script>var w = window, d = document, e; w._fpes || (w._fpes = [], w.addEventListener("load", function () { var s = d.createElement("script"); s.src = "//embed.flowplayer.org/6.0.3/embed.min.js", d.body.appendChild(s) })), e = [].slice.call(d.getElementsByTagName("script"), -1)[0].parentNode, w._fpes.push({ e: e, l: "", c: { "ratio": 0.5625, "rtmp": "rtmp://212.174.179.197:1935/WEBTV/", "live": false, "origin": "https://www.kulturportali.gov.tr/medya/video/videodetay/7462", "key": "$288206610485450", "swf": "/Flowplayer/flowplayer.swf", "swfHls": "/Flowplayer/flowplayerhls.swf", "adaptiveRatio": false, "logo": "https://webtvpanel.kulturportali.gov.tr/WebTV_Contents/logo.png", "clip": { "title": "Gazi Mustafa Kemal Atatürk'ün TBMM Açılış Konuşması 1932", "qualities": ["1080p", "720p", "480p", "360p", "240p", "120p"], "defaultQuality": "auto", "sources": [{ "type": "video/mp4", "src": "//webtvpanel.kulturportali.gov.tr/WebTV_Contents/Publish/10012019153916/02iigaziimikemaliataturkiunitbmmiacisikonusmasiii1932-1080p.mp4" }, { "type": "application/x-mpegurl", "src": "http://212.174.179.197:1935/WEBTV/_definst_/mp4:Publish/10012019153916/02iigaziimikemaliataturkiunitbmmiacisikonusmasiii1932-360p.mp4/playlist.m3u8" }] } } });</script>
+                    </a>
+                </div>
+            </div>
+
+            <!-- 10. Kart -->
+            <div class="col-5 ms-5 mt-5">
+                <div class="Cerceve ms-5 mt-5">
+                    <a href="https://www.kulturportali.gov.tr/medya/video/videodetay/7454">
+                        Watch video!
+                        <script>var w = window, d = document, e; w._fpes || (w._fpes = [], w.addEventListener("load", function () { var s = d.createElement("script"); s.src = "//embed.flowplayer.org/6.0.3/embed.min.js", d.body.appendChild(s) })), e = [].slice.call(d.getElementsByTagName("script"), -1)[0].parentNode, w._fpes.push({ e: e, l: "", c: { "ratio": 0.5625, "rtmp": "rtmp://212.174.179.197:1935/WEBTV/", "live": false, "origin": "https://www.kulturportali.gov.tr/medya/video/videodetay/7454", "key": "$288206610485450", "swf": "/Flowplayer/flowplayer.swf", "swfHls": "/Flowplayer/flowplayerhls.swf", "adaptiveRatio": false, "logo": "https://webtvpanel.kulturportali.gov.tr/WebTV_Contents/logo.png", "clip": { "title": "Cumhuriyet Bayramı Törenleri 29 Ekim 1936 Ankara", "qualities": ["1080p", "720p", "480p", "360p", "240p", "120p"], "defaultQuality": "auto", "sources": [{ "type": "application/x-mpegurl", "src": "http://212.174.179.197:1935/WEBTV/_definst_/mp4:Publish/10012019110540/08iicumhuriyetibayramiitorenleriii29iekimi1936iiankara-360p.mp4/playlist.m3u8" }, { "type": "video/mp4", "src": "//webtvpanel.kulturportali.gov.tr/WebTV_Contents/Publish/10012019110540/08iicumhuriyetibayramiitorenleriii29iekimi1936iiankara-360p.mp4" }] } } });</script>
+                    </a>
+                </div>
+            </div>
+
+            <!-- 11. Kart -->
+            <div class="col-5 ms-0 me-5 mt-5">
+                <div class="Cerceve ms-5 mt-5">
+                    <a href="https://www.kulturportali.gov.tr/medya/video/videodetay/7452">
+                        Watch video!
+                        <script>var w = window, d = document, e; w._fpes || (w._fpes = [], w.addEventListener("load", function () { var s = d.createElement("script"); s.src = "//embed.flowplayer.org/6.0.3/embed.min.js", d.body.appendChild(s) })), e = [].slice.call(d.getElementsByTagName("script"), -1)[0].parentNode, w._fpes.push({ e: e, l: "", c: { "ratio": 0.5625, "rtmp": "rtmp://212.174.179.197:1935/WEBTV/", "live": false, "origin": "https://www.kulturportali.gov.tr/medya/video/videodetay/7452", "key": "$288206610485450", "swf": "/Flowplayer/flowplayer.swf", "swfHls": "/Flowplayer/flowplayerhls.swf", "adaptiveRatio": false, "logo": "https://webtvpanel.kulturportali.gov.tr/WebTV_Contents/logo.png", "clip": { "title": "Mustafa Kemal Atatürk'ün Ankara'da Karşılanması ve Birinci TBMM Binası", "qualities": ["1080p", "720p", "480p", "360p", "240p", "120p"], "defaultQuality": "auto", "sources": [{ "type": "video/mp4", "src": "//webtvpanel.kulturportali.gov.tr/WebTV_Contents/Publish/10012019093138/01iimikemaliataturkiuniankaraidaikarsilanmasiivei1iinciitbmmibinasi-1080p.mp4" }, { "type": "application/x-mpegurl", "src": "http://212.174.179.197:1935/WEBTV/_definst_/mp4:Publish/10012019093138/01iimikemaliataturkiuniankaraidaikarsilanmasiivei1iinciitbmmibinasi-360p.mp4/playlist.m3u8" }] } } });</script>
+                    </a>
+                </div>
+            </div>
+
+            <!-- 12. Kart -->
+            <div class="col-5 ms-5 mt-5">
+                <div class="Cerceve ms-5 mt-5">
+                    <a href="https://www.kulturportali.gov.tr/medya/video/videodetay/7453">
+                        Watch video!
+                        <script>var w = window, d = document, e; w._fpes || (w._fpes = [], w.addEventListener("load", function () { var s = d.createElement("script"); s.src = "//embed.flowplayer.org/6.0.3/embed.min.js", d.body.appendChild(s) })), e = [].slice.call(d.getElementsByTagName("script"), -1)[0].parentNode, w._fpes.push({ e: e, l: "", c: { "ratio": 0.5625, "rtmp": "rtmp://212.174.179.197:1935/WEBTV/", "live": false, "origin": "https://www.kulturportali.gov.tr/medya/video/videodetay/7453", "key": "$288206610485450", "swf": "/Flowplayer/flowplayer.swf", "swfHls": "/Flowplayer/flowplayerhls.swf", "adaptiveRatio": false, "logo": "https://webtvpanel.kulturportali.gov.tr/WebTV_Contents/logo.png", "clip": { "title": "Ankara Cumhuriyet Bayramı Törenleri 29 Ekim 1933 ", "qualities": ["1080p", "720p", "480p", "360p", "240p", "120p"], "defaultQuality": "auto", "sources": [{ "type": "video/mp4", "src": "//webtvpanel.kulturportali.gov.tr/WebTV_Contents/Publish/10012019102950/07iicumhuriyetibayramiitorenleriii29iekimi1933iiankara-1080p.mp4" }, { "type": "application/x-mpegurl", "src": "http://212.174.179.197:1935/WEBTV/_definst_/mp4:Publish/10012019102950/07iicumhuriyetibayramiitorenleriii29iekimi1933iiankara-360p.mp4/playlist.m3u8" }] } } });</script>
+                    </a>
+                </div>
+            </div>
+
+            <!-- 13. Kart -->
+            <div class="col-5 ms-0 me-5 mt-5">
+                <div class="Cerceve ms-5 mt-5">
+                    <a href="https://www.kulturportali.gov.tr/medya/video/videodetay/9">
+                        Watch video!
+                        <script>var w = window, d = document, e; w._fpes || (w._fpes = [], w.addEventListener("load", function () { var s = d.createElement("script"); s.src = "//embed.flowplayer.org/6.0.3/embed.min.js", d.body.appendChild(s) })), e = [].slice.call(d.getElementsByTagName("script"), -1)[0].parentNode, w._fpes.push({ e: e, l: "", c: { "ratio": 0.5625, "rtmp": "rtmp://212.174.179.197:1935/WEBTV/", "live": false, "origin": "https://www.kulturportali.gov.tr/medya/video/videodetay/9", "key": "$288206610485450", "swf": "/Flowplayer/flowplayer.swf", "swfHls": "/Flowplayer/flowplayerhls.swf", "adaptiveRatio": false, "logo": "https://webtvpanel.kulturportali.gov.tr/WebTV_Contents/logo.png", "clip": { "title": "Atatürk'ün 1 Kasım 1936 tarihinde Meclis açılış konuşması", "qualities": ["1080p", "720p", "480p", "360p", "240p", "120p"], "defaultQuality": "auto", "sources": [{ "type": "video/mp4", "src": "//webtvpanel.kulturportali.gov.tr/WebTV_Contents/Publish/23102015122715/ataturkiuni01i11i1936itarihliimeclisiacilisikonusmasi-1080p.mp4" }, { "type": "application/x-mpegurl", "src": "http://212.174.179.197:1935/WEBTV/_definst_/mp4:Publish/23102015122715/ataturkiuni01i11i1936itarihliimeclisiacilisikonusmasi-360p.mp4/playlist.m3u8" }] } } });</script>
+                    </a>
+                </div>
+            </div>
+
+            <!-- 14. Kart -->
+            <div class="col-5 ms-5 mt-5">
+                <div class="Cerceve ms-5 mt-5">
+                    <a href="https://www.kulturportali.gov.tr/medya/video/videodetay/80">
+                        Watch video!
+                        <script>var w = window, d = document, e; w._fpes || (w._fpes = [], w.addEventListener("load", function () { var s = d.createElement("script"); s.src = "//embed.flowplayer.org/6.0.3/embed.min.js", d.body.appendChild(s) })), e = [].slice.call(d.getElementsByTagName("script"), -1)[0].parentNode, w._fpes.push({ e: e, l: "", c: { "ratio": 0.5625, "rtmp": "rtmp://212.174.179.197:1935/WEBTV/", "live": false, "origin": "https://www.kulturportali.gov.tr/medya/video/videodetay/80", "key": "$288206610485450", "swf": "/Flowplayer/flowplayer.swf", "swfHls": "/Flowplayer/flowplayerhls.swf", "adaptiveRatio": false, "logo": "https://webtvpanel.kulturportali.gov.tr/WebTV_Contents/logo.png", "clip": { "title": "Kurtuluş Savaşı Müzesi (I.TBMM Binası)", "qualities": ["720p", "480p", "360p", "240p", "120p"], "defaultQuality": "auto", "sources": [{ "type": "video/mp4", "src": "//webtvpanel.kulturportali.gov.tr/WebTV_Contents/Publish/27112015141454/kurtulusisavasiimuzesiitanitim-720p.mp4" }, { "type": "application/x-mpegurl", "src": "http://212.174.179.197:1935/WEBTV/_definst_/mp4:Publish/27112015141454/kurtulusisavasiimuzesiitanitim-360p.mp4/playlist.m3u8" }] } } });</script>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <script>
+        const slider = document.getElementById("slider");
+        let counter = 0;
+
+        function autoSlide() {
+            setInterval(() => {
+                counter++; 
+
+                if (counter === 3) {
+                    counter = 0;
+                }
+                slider.style.backgroundImage = `url(/img/Atatürk_${counter + 1}.png)`; 
+            }, 3000);
+        }
+
+        autoSlide();
+    </script>
+</body>
+</html>
