@@ -11,12 +11,12 @@
                 PanelAc();
 
                 ses.onended = function () {
-                    window.location.href = "..GüzelHatıralar.html";
+                    window.location.href = "GüzelHatıralar.html";
                     PanelKapat();
                 };
             });
         } else {
-            window.location.href = "..GüzelHatıralar.html";
+            window.location.href = "GüzelHatıralar.html";
         }
     } else {
         alert("Yönlendirme yapılamadı.");
