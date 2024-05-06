@@ -6,22 +6,22 @@
     var audioPlayer = document.getElementById("audioPlayer");
 
     var songList = [
-        "/muzik/Alişimin-Kaşları.mp3",
-        "/muzik/Cana-Rakibi.mp3",
-        "/muzik/Dağlar-Dağlar-Viran-Dağlar.mp3",
-        "/muzik/Havada-Bulut-Yok.mp3",
-        "/muzik/İzmirin-Kavakları.mp3",
-        "/muzik/Kimseye-Etmem.mp3",
-        "/muzik/koskum-var.mp3",
-        "/muzik/Mani-Oluyor.mp3",
-        "/muzik/Mayadağdan-Kalkan-Kazlar.mp3",
-        "/muzik/Mendilimin-Yeşili.mp3",
-        "/muzik/Nigahı-Mestine.mp3",
-        "/muzik/Öyle-Afeti-Yekta.mp3",
-        "/muzik/Pencere-Açıldı-Bilal-Oğlan.mp3",
-        "/muzik/Peşrev.mp3",
-        "/muzik/Şahane-Gözler.mp3",
-        "/muzik/yanik-omer.mp3",
+        "Alişimin-Kaşları.mp3",
+        "Cana-Rakibi.mp3",
+        "Dağlar-Dağlar-Viran-Dağlar.mp3",
+        "Havada-Bulut-Yok.mp3",
+        "İzmirin-Kavakları.mp3",
+        "Kimseye-Etmem.mp3",
+        "koskum-var.mp3",
+        "Mani-Oluyor.mp3",
+        "Mayadağdan-Kalkan-Kazlar.mp3",
+        "Mendilimin-Yeşili.mp3",
+        "Nigahı-Mestine.mp3",
+        "Öyle-Afeti-Yekta.mp3",
+        "Pencere-Açıldı-Bilal-Oğlan.mp3",
+        "Peşrev.mp3",
+        "Şahane-Gözler.mp3",
+        "yanik-omer.mp3",
     ];
 
     var currentSongIndex = 0;
