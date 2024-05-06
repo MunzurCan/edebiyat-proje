@@ -1,11 +1,9 @@
 ﻿function Pass() {
-    var password = prompt("Lütfen şifreyi girin:");
     var mesaj = "SAYGI DURUŞU İÇİN HAZIR OL DİKKAT ";
     var ses = new Audio("SaygıDuruşu.mp3");
     var sonuc = confirm(mesaj);
 
-    if (password == "18811938" || password == "3") {
-        if (sonuc) {
+    if (sonuc) {
             ses.play().then(function () {
 
                 PanelAc();
@@ -18,9 +16,6 @@
         } else {
             window.location.href = "GüzelHatıralar.html";
         }
-    } else {
-        alert("Yönlendirme yapılamadı.");
-    }
 }
 
 function PanelAc() {
