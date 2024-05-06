@@ -1,7 +1,7 @@
 ﻿function Pass() {
     var password = prompt("Lütfen şifreyi girin:");
     var mesaj = "SAYGI DURUŞU İÇİN HAZIR OL DİKKAT ";
-    var ses = new Audio("..SaygıDuruşu.mp3");
+    var ses = new Audio("SaygıDuruşu.mp3");
     var sonuc = confirm(mesaj);
 
     if (password == "18811938" || password == "3") {
