@@ -6,22 +6,7 @@
     var audioPlayer = document.getElementById("audioPlayer");
 
     var songList = [
-        "Alişimin-Kaşları.mp3",
-        "Cana-Rakibi.mp3",
-        "Dağlar-Dağlar-Viran-Dağlar.mp3",
-        "Havada-Bulut-Yok.mp3",
-        "İzmirin-Kavakları.mp3",
-        "Kimseye-Etmem.mp3",
-        "koskum-var.mp3",
-        "Mani-Oluyor.mp3",
-        "Mayadağdan-Kalkan-Kazlar.mp3",
-        "Mendilimin-Yeşili.mp3",
-        "Nigahı-Mestine.mp3",
-        "Öyle-Afeti-Yekta.mp3",
-        "Pencere-Açıldı-Bilal-Oğlan.mp3",
-        "Peşrev.mp3",
-        "Şahane-Gözler.mp3",
-        "yanik-omer.mp3",
+        
     ];
 
     var currentSongIndex = 0;
