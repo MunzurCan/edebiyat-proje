@@ -1,21 +1,5 @@
 ﻿function Pass() {
-    var mesaj = "SAYGI DURUŞU İÇİN HAZIR OL DİKKAT ";
-    var ses = new Audio("SaygıDuruşu.mp3");
-    var sonuc = confirm(mesaj);
-
-    if (sonuc) {
-            ses.play().then(function () {
-
-                PanelAc();
-
-                ses.onended = function () {
-                    window.location.href = "GüzelHatıralar.html";
-                    PanelKapat();
-                };
-            });
-        } else {
-            window.location.href = "GüzelHatıralar.html";
-        }
+    window.location.href = "GüzelHatıralar.html"; 
 }
 
 function PanelAc() {
